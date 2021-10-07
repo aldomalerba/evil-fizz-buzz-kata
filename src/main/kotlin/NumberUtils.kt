@@ -1,7 +1,8 @@
 class NumberUtils {
     fun isPrime(number: Int) : Boolean {
-        if(listOf(2, 3, 5, 7, 11, 13, 17, 19).contains(number)) return true
-        return false;
+        if (number == 0 || number == 1) return false
+        for(num in 2..number / 2) if (number % num == 0) return false
+        return true;
     }
 
 }
