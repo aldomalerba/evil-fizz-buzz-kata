@@ -26,4 +26,16 @@ class SequenceParserTest {
             assertEquals("Buzz", parser.parse(num))
 
     }
+
+    @Test
+    internal fun `replace with FizzBuzz if divisible by 5 and 3`() {
+
+        val parser = SequenceParser()
+
+        val integers = listOf(15,30,60,75,90)
+
+        for (num in integers)
+            assertEquals("FizzBuzz", parser.parse(num))
+
+    }
 }
