@@ -10,7 +10,7 @@ class AcceptanceTests {
     internal fun `the firsts 15 characters should be correct`() {
 
         val program = FizzBuzz()
-
+        program.print()
         val outputStream = ByteArrayOutputStream()
         System.setOut(PrintStream(outputStream, true))
 
