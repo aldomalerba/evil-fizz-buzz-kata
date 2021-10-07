@@ -42,7 +42,7 @@ class SequenceParserTest {
     @Test
     internal fun `concatenate Wizz if prime number`() {
 
-        val integers = listOf(2, 3, 5, 7, 11, 13, 17)
+        val integers = listOf(2, 3, 5, 7, 11, 13, 17, 19)
 
         every { utils.isPrime(match{ integers.contains(it) }) } returns true;
 
