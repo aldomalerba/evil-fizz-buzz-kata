@@ -24,7 +24,7 @@ class SequencePrinterTest {
 
         val printer = SequencePrinter(parser)
 
-        assertEquals(100, printer.print().split(",").count{ it == "Test"})
+        assertEquals(100, printer.print().split(", ").count{ it == "Test"})
 
     }
 }

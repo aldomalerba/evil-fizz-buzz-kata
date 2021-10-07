@@ -2,7 +2,7 @@ class SequencePrinter(private val parser: SequenceParser) {
 
     fun print(): String  {
         val sequence = sequence()
-        return sequence.joinToString(",")
+        return sequence.joinToString(", ")
     }
 
     private fun sequence(): MutableList<String> {
